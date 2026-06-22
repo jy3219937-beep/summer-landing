@@ -73,6 +73,7 @@ button { font: inherit; cursor: pointer; }
 }
 .nav-brand { display: flex; align-items: center; gap: 12px; font-weight: 700; color: var(--navy-800); }
 .nav-brand .nb-logo { font-family: var(--display); font-weight: 800; font-size: 17px; letter-spacing: -0.01em; }
+.nav-brand .nb-img { height: 26px; width: auto; display: block; }
 .nav-brand .pipe { color: var(--ink-300); }
 .nav-brand .nb-sub {
   font-family: var(--display); font-size: 13.5px; font-weight: 700;
@@ -622,6 +623,7 @@ footer { background: var(--navy-900); color: rgba(255,255,255,.7); padding: 56px
 .ft-disc b { color: var(--sun); display: block; margin-bottom: 6px; font-family: var(--display); font-size: 13px; letter-spacing: .04em; }
 .ft-info { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 36px; margin-bottom: 32px; }
 .ft-logo-text { font-family: var(--display); font-weight: 800; font-size: 18px; color: #fff; margin-bottom: 10px; letter-spacing: -0.01em; }
+.ft-logo-img { height: 30px; width: auto; margin-bottom: 14px; filter: brightness(0) invert(1); opacity: .9; }
 .ft-info p { font-size: 13px; line-height: 1.7; }
 .ft-info h6 { font-family: var(--display); color: #fff; font-size: 13px; font-weight: 700; margin-bottom: 12px; letter-spacing: .04em; text-transform: uppercase; }
 .ft-info ul { list-style: none; }
