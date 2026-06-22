@@ -1067,6 +1067,59 @@ footer { background: var(--navy-900); color: rgba(255,255,255,.7); padding: 56px
 .chapter-alt .grade { background: #fff; }
 
 /* ──────────────────────────────────────────
+   SUBCHAPTER (08-A · 08-B · 08-C 등)
+   ────────────────────────────────────────── */
+.chapter-key { background: linear-gradient(180deg, var(--cream) 0%, #fff8f0 100%); }
+.chapter-key .ch-head { border-bottom-color: var(--sun); }
+.chapter-key .ch-num { color: var(--sun); }
+.chapter-key .ch-head h3 em { color: var(--sun); }
+
+.subch {
+  margin-top: 36px;
+  padding: 28px 28px;
+  background: #fff;
+  border: 1px solid var(--ink-100);
+  border-radius: 14px;
+  border-left: 5px solid var(--sun);
+}
+.subch + .subch { margin-top: 22px; }
+.subch-head {
+  display: flex; align-items: baseline; gap: 14px;
+  margin-bottom: 12px;
+}
+.sc-no {
+  font-family: var(--mono); font-weight: 700;
+  font-size: 13px; letter-spacing: .06em;
+  color: var(--sun);
+  background: rgba(255,138,61,.1);
+  padding: 4px 10px; border-radius: 6px;
+  white-space: nowrap;
+}
+.subch-head h4 {
+  font-size: 19px; font-weight: 800;
+  color: var(--navy-900);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+.subch-head h4 em { color: var(--sun); font-weight: 800; }
+.subch-lead {
+  font-size: 14.5px; line-height: 1.75;
+  color: var(--ink-700);
+  margin-bottom: 18px;
+}
+.subch-lead b { color: var(--navy-900); }
+
+.rule-box-soft {
+  background: linear-gradient(135deg, var(--navy-900) 0%, #1a1d5e 100%);
+  margin-top: 0;
+}
+
+@media (max-width: 600px) {
+  .subch { padding: 22px 20px; }
+  .subch-head { flex-direction: column; gap: 8px; align-items: flex-start; }
+}
+
+/* ──────────────────────────────────────────
    GOLDEN LINE (순공시간)
    ────────────────────────────────────────── */
 .golden-line { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 0 0 24px; }
